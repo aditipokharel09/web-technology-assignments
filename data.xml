@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  data.xml — Aditi Pokharel's App Data
+  Stores app configuration, user profile defaults, and country/hobby lists.
+-->
+<appData>
+
+  <!-- ── App Meta ── -->
+  <app>
+    <title>Aditi Pokharel | Interactive App</title>
+    <version>1.0.0</version>
+    <theme>Warm Earthy Tones</theme>
+    <description>A personal interactive single-page app built with Bootstrap and jQuery.</description>
+  </app>
+
+  <!-- ── Owner Profile ── -->
+  <owner>
+    <name>Aditi Pokharel</name>
+    <tagline>Reader · Music Lover · Wanderer</tagline>
+    <hobbies>
+      <hobby icon="📚">Reading</hobby>
+      <hobby icon="🎵">Music</hobby>
+      <hobby icon="✈️">Travel</hobby>
+    </hobbies>
+  </owner>
+
+  <!-- ── Form Dropdown: Countries ── -->
+  <countries>
+    <country code="NP" flag="🇳🇵">Nepal</country>
+    <country code="IN" flag="🇮🇳">India</country>
+    <country code="US" flag="🇺🇸">USA</country>
+    <country code="GB" flag="🇬🇧">UK</country>
+    <country code="AU" flag="🇦🇺">Australia</country>
+    <country code="CA" flag="🇨🇦">Canada</country>
+    <country code="XX" flag="🌍">Other</country>
+  </countries>
+
+  <!-- ── Form Checkboxes: All Hobby Options ── -->
+  <hobbyOptions>
+    <option id="reading"  icon="📚">Reading</option>
+    <option id="music"    icon="🎵">Music</option>
+    <option id="travel"   icon="✈️">Travel</option>
+    <option id="coding"   icon="💻">Coding</option>
+    <option id="cooking"  icon="🍳">Cooking</option>
+  </hobbyOptions>
+
+  <!-- ── Home Section Strings ── -->
+  <homeSection>
+    <defaultTitle>Hello, I'm Aditi 🌿</defaultTitle>
+    <updatedTitle>Updated Content</updatedTitle>
+    <actionBtnLabel>Trigger the Magic</actionBtnLabel>
+    <resetBtnLabel>Reset</resetBtnLabel>
+    <toggleBtnLabel>Toggle Section</toggleBtnLabel>
+    <aboutText>
+      I love losing myself in a good book, singing along to my favourite songs,
+      and planning my next travel adventure. This app is my little corner of the
+      web — built with Bootstrap and jQuery!
+    </aboutText>
+    <alertMessage>Aditi's jQuery magic just fired! Title updated, styled and animated.</alertMessage>
+  </homeSection>
+
+  <!-- ── Validation Rules ── -->
+  <validationRules>
+    <rule field="name"     required="true"  message="Name is required." />
+    <rule field="email"    required="true"  message="Please enter a valid email address." />
+    <rule field="password" minLength="6"    message="Password must be at least 6 characters." />
+    <rule field="gender"   required="true"  message="Please select your gender." />
+    <rule field="hobbies"  minSelected="1"  message="Please select at least one hobby." />
+  </validationRules>
+
+</appData>
